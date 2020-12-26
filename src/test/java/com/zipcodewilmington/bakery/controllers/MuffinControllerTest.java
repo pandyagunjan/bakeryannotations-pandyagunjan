@@ -50,6 +50,7 @@ public class MuffinControllerTest {
                 .given(repository.save(muffin))
                 .willReturn(muffin);
 
+
         String expectedContent = "{\"id\":null,\"flavor\":\"blueberry\"}";
         this.mvc.perform(MockMvcRequestBuilders
                 .post("/muffins/")
